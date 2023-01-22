@@ -5,16 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;700;800&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- additional css  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              Manrope: ['Manrope', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
   </head>
   <body>
-        <section class="banner_section">
-            <header>
-                
-            </header>
-        </section>
+    <!-- banner section -->
+    <section class="banner_section max-w-screen-lg mx-auto ">
+      <header>
+        <div class="banner_wrap flex flex-col-reverse md:flex-row md:items-center p-5 ">
+          <div class="banner-info">
+            <h2 class="font-bold text-3xl md:text-5xl font-Manrope mb-3">It's good tea time at The Tea House</h2>
+            <p class="font-Manrope">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="px-5 py-4 bg-red-600 flex items-center mt-5 rounded-xl gap-2 font-semibold text-white"> Explore More <img class="w-3 " src="./Assets/images/arrow.png" alt=""> </button>
+          </div>
+          <div class="banner-img">
+            <img src="./Assets/images/banner.png" alt="" />
+          </div>
+        </div>
+      </header>
+    </section>
 
-    <main></main>
-    <footer></footer>
+    <main>
+        <!-- Featured Products section -->
+
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
